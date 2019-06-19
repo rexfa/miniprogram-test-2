@@ -1,3 +1,5 @@
 <!--components/itemlist/itemlist.wxml-->
-<view>{{myArray[0]}}</view>
-<text>{{myArray[1]}}</text>
+  <view wx:for="{{listdata}}">
+    {{item}}
+    <infoitem></infoitem>
+  </view>

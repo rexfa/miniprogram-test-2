@@ -2,10 +2,11 @@
 Component({
   /**
    * 组件的属性列表
+   * https://developers.weixin.qq.com/community/develop/doc/0004605e93c970557b47d50ea5b004
    */
   behaviors: [],
   properties: {
-    myArray: {
+    listdata: {
       type: Array,
       value: []
     }

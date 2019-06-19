@@ -1,2 +1,2 @@
 <!--pages/prize/prize.wxml-->
-<ilist ilist="{{array}}"/>
+<ilist listdata="{{array}}"/>
