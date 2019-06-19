@@ -1,2 +1,5 @@
 <!--components/infoitem/infoitem.wxml-->
-<text>components/infoitem/infoitem.wxml</text>
+<view class="wrapper">
+  <text>信息组件</text>
+  <image src='https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg' bindload="imageOnLoad"   binderror="imageOnLoadError"></image>
+</view>

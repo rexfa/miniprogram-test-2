@@ -1,0 +1,3 @@
+<!--components/itemlist/itemlist.wxml-->
+<view>{{myArray[0]}}</view>
+<text>{{myArray[1]}}</text>

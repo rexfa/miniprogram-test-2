@@ -1,0 +1,5 @@
+{
+  "component": true,
+  "usingComponents": {
+    "infoitem": "/components/infoitem/infoitem"}
+}

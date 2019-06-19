@@ -1,2 +1,8 @@
 <!--pages/rank/rank.wxml-->
 <text>pages/rank/rank.wxml</text>
+<view id="mainview">
+  <view wx:for="{{array}}">
+    {{item}}
+    <infoitem></infoitem>
+  </view>
+</view>
