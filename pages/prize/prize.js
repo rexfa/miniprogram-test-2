@@ -5,8 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    array:['a','d','c']
-  },
+    array: [ {id:'a',pic:'https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg'},
+      {id:'d',pic:'https://img14.360buyimg.com/n0/jfs/t1/64026/10/241/264032/5ce62cfbE250b1d42/cd22f49cec316f07.jpg'},
+      {id:'c',pic:'https://img14.360buyimg.com/n0/jfs/t1/42514/38/7006/174989/5d089c7dEc2593f3f/f7b38dfa82781d9b.jpg'}
+    ]},
 
   /**
    * 生命周期函数--监听页面加载

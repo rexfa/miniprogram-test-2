@@ -5,8 +5,9 @@ Component({
    */
   properties: {
     infoid: {
-      type: String,
-      value: ""
+      type: Object,
+      value: [],
+      observer: function (newVal, oldVal) {console.info(newVal) }
     }
   },
 
@@ -25,7 +26,7 @@ Component({
       // 自定义组件向父组件传值 
       let val = data,
         vote_event_detail = {
-          val: infoid
+          val: this.properties.infoid.id
         }
       // voteforme自定义名称事件，父组件中使用
       this.triggerEvent('voteforme', vote_event_detail)

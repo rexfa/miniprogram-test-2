@@ -1,1 +1,6 @@
 /* components/itemlist/itemlist.wxss */
+.thisItem
+{
+  width: 50%;
+  margin-top: 0rpx;
+}

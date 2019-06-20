@@ -30,7 +30,8 @@ Component({
     vote:function(e) {
       this.setData({
         is_show: e.detail.val
-      })
+      });
+      console.info(this.data.is_show);
     },
   }
 })
