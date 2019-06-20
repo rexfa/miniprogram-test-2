@@ -9,6 +9,10 @@ Component({
     listdata: {
       type: Array,
       value: []
+    },
+    votedata:{
+      type:String,
+      value:""
     }
   },
 
@@ -23,6 +27,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    vote:function(e) {
+      this.setData({
+        is_show: e.detail.val
+      })
+    },
   }
 })
