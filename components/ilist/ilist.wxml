@@ -1,5 +1,6 @@
 <!--components/itemlist/itemlist.wxml-->
-  <view wx:for="{{listdata}}" wx:key="id">   
-    <view class='thisItem'><infoitem  infoid="{{item}}" bind:voteforme="vote"></infoitem></view> 
-    
+<view class="container">
+  <view wx:for="{{listdata}}" wx:key="id" class='thisItem'>   
+      <infoitem  infoid="{{item}}" bind:voteforme="vote"></infoitem>
   </view>
+</view>  

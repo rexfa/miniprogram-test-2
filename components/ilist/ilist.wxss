@@ -1,6 +1,13 @@
 /* components/itemlist/itemlist.wxss */
+.container
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:  wrap;
+  height: 1900px;
+}
 .thisItem
 {
-  width: 50%;
-  margin-top: 0rpx;
+ width: 50%;
+ align-self:flex-start;
 }
