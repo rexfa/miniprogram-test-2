@@ -1,2 +1,13 @@
 <!--pages/itemlist/itemlist.wxml-->
-<text>pages/itemlist/itemlist.wxml</text>
+<view id='listContainer'>
+</view>
+<view>
+  <button class='btnFlash'  bindtap="bindViewTap">
+    <image class='btnImg' src='../../images/flush01.png'></image>
+    <view>刷新</view>
+  </button>
+    <button class='btnFlash'  bindtap="addList">
+    <image class='btnImg' src='../../images/flush01.png'></image>
+    <view>加载更多</view>
+  </button>
+</view>

@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "ilist": "/components/ilist/ilist"
+  }
 }
