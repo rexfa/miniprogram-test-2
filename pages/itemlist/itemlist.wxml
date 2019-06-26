@@ -1,5 +1,8 @@
 <!--pages/itemlist/itemlist.wxml-->
 <view id='listContainer'>
+  <view wx:for="{{listArray}}">
+    <ilist listdata="{{array}}"/>
+  </view>
 </view>
 <view>
   <button class='btnFlash'  bindtap="bindViewTap">

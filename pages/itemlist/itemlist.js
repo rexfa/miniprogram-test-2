@@ -2,8 +2,9 @@
 Page({
 
   /**
-   * 页面的初始数据
+   * 试验动态加载自定义控件
    * https://blog.csdn.net/Charles_Tian/article/details/80343540
+   * https://blog.csdn.net/mushui0633/article/details/77863485
    */
   data: {
     defaultSize: 'default',
@@ -12,6 +13,7 @@ Page({
     disabled: false,
     plain: false,
     loading: false,
+    listArray:['a'],
     array: [{ id: 'a', pic: 'https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg' },
     { id: 'b', pic: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
     { id: 'c', pic: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
@@ -36,6 +38,7 @@ Page({
     let l = new ilist();
     l.listdata = this.data.array;
     this.listContainer.push(l);
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
