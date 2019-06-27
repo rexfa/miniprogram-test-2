@@ -2,6 +2,6 @@
 <view class="wrapper">
   <text>信息组件</text>
   <text>{{infoid.id}}</text>
-  <image class="img" src='{{infoid.pic}}' mode="widthFix"></image>
+  <image id='img' class="img" src='{{infoid.pic}}' mode="widthFix"></image>
   <button  class='btn1' bindtap='vote'><image class='btnImg' class='btnImg' src='../../images/vote1.png'></image><text>投票</text></button>
 </view>

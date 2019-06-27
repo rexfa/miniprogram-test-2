@@ -25,3 +25,7 @@
   border-radius: 98rpx;
   border: 0; 
 }
+.viewContainer
+{
+  display: flex;
+}

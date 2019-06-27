@@ -17,7 +17,17 @@ Component({
   data: {
 
   },
-
+  lifetimes: {
+    // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
+    created() {
+      console.info("infoitem created.");
+    },
+    attached() { 
+      console.info(infoid);
+    },
+    moved() { },
+    detached() { },
+  },
   /**
    * 组件的方法列表
    */

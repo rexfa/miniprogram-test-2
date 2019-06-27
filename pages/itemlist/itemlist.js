@@ -13,13 +13,14 @@ Page({
     disabled: false,
     plain: false,
     loading: false,
-    listArray:['a'],
-    array: [{ id: 'a', pic: 'https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg' },
+    
+    itemDataArray: [{ id: 'a', pic: 'https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg' },
     { id: 'b', pic: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
     { id: 'c', pic: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
     { id: 'd', pic: 'https://img14.360buyimg.com/n0/jfs/t1/42514/38/7006/174989/5d089c7dEc2593f3f/f7b38dfa82781d9b.jpg' },
     { id: 'e', pic: 'https://img14.360buyimg.com/n0/jfs/t1/64026/10/241/264032/5ce62cfbE250b1d42/cd22f49cec316f07.jpg' }
-    ]
+    ],
+    listArray: []
   },
 
   /**
@@ -35,10 +36,11 @@ Page({
     })
   },
   addList:function(){
-    let l = new ilist();
-    l.listdata = this.data.array;
-    this.listContainer.push(l);
-    
+    var la = this.data.listArray
+    let l = { id: 'a', data: this.data.itemDataArray };
+    la.push(l);
+    this.setData({ listArray:la});
+    //console.info(this.data.listArray);
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
