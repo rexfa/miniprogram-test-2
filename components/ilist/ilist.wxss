@@ -5,6 +5,7 @@
   flex-direction: column;
   flex-wrap:  wrap;
   height: 1900px;
+  width: 100%;
 }
 .thisItem
 {

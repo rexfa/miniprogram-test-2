@@ -1,9 +1,8 @@
 <!--pages/itemlist/itemlist.wxml-->
-<view id='listContainer' class='viewContainer'>
-  <view wx:for-items="{{listArray}}" wx:key="id" wx:for-index="id"  wx:for-item="item">
-    <ilist listdata="{{item.data}}"/>
-  </view>
+<view wx:for-items="{{listArray}}" wx:key="id" wx:for-index="id"  wx:for-item="item" class='viewContainer'>
+  <ilist listdata="{{item.data}}" class="ilistClass"/>
 </view>
+
 <view>
   <button class='btnFlash'  bindtap="bindViewTap">
     <image class='btnImg' src='../../images/flush01.png'></image>

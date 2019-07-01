@@ -23,7 +23,7 @@ Component({
       console.info("infoitem created.");
     },
     attached() { 
-      console.info(infoid);
+      //console.info(infoid);
     },
     moved() { },
     detached() { },
