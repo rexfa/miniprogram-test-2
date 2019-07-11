@@ -14,11 +14,11 @@ Page({
     plain: false,
     loading: false,
     
-    itemDataArray: [{ id: 'a', pic: 'https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg' },
-    { id: 'b', pic: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
-    { id: 'c', pic: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
-    { id: 'd', pic: 'https://img14.360buyimg.com/n0/jfs/t1/42514/38/7006/174989/5d089c7dEc2593f3f/f7b38dfa82781d9b.jpg' },
-    { id: 'e', pic: 'https://img14.360buyimg.com/n0/jfs/t1/64026/10/241/264032/5ce62cfbE250b1d42/cd22f49cec316f07.jpg' }
+    itemDataArray: [{ id: 'a', picURL: 'https://img14.360buyimg.com/n0/jfs/t1/50726/15/1257/215083/5cef90f6Efef722f6/acc3a18650404548.jpg' },
+      { id: 'b', picURL: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
+      { id: 'c', picURL: 'http://img.redocn.com/sheji/20171018/tiqianyifenzhongweixinxiaogushichangtu_8171981.jpg' },
+      { id: 'd', picURL: 'https://img14.360buyimg.com/n0/jfs/t1/42514/38/7006/174989/5d089c7dEc2593f3f/f7b38dfa82781d9b.jpg' },
+      { id: 'e', picURL: 'https://img14.360buyimg.com/n0/jfs/t1/64026/10/241/264032/5ce62cfbE250b1d42/cd22f49cec316f07.jpg' }
     ],
     listArray: []
   },
@@ -27,8 +27,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
+    var page = this;
+    var id = 1;
+    wx.request({
+      url: 'https://wxapp.rexfa.cc/api/MPDataAIP/'+id,
+      method:'get',
+      header:{'content-type':'application/json'},
+    complete:function(res){
+      console.log('requst complete!')
+    },
+    success:function(res){
+      page.setData({ itemDataArray : res.data});
+      
+      console.log(res.data)
+    }}
+    )},
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({

@@ -1,7 +1,9 @@
 <!--components/infoitem/infoitem.wxml-->
 <view class="wrapper">
-  <text>信息组件</text>
-  <text>{{infoid.id}}</text>
-  <image id='img' class="img" src='{{infoid.pic}}' mode="widthFix"></image>
+  <text>注册id</text>
+  <text>{{infoid.itemId}}</text>
+  <text>真实姓名</text>
+  <text>{{infoid.realName}}</text>
+  <image id='img' class="img" src='{{infoid.picURL}}' mode="widthFix"></image>
   <button  class='btn1' bindtap='vote'><image class='btnImg' class='btnImg' src='../../images/vote1.png'></image><text>投票</text></button>
 </view>

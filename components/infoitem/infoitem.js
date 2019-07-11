@@ -36,7 +36,7 @@ Component({
       // 自定义组件向父组件传值 
       let val = data,
         vote_event_detail = {
-          val: this.properties.infoid.id
+          val: this.properties.infoid.itemId
         }
       // voteforme自定义名称事件，父组件中使用
       this.triggerEvent('voteforme', vote_event_detail)
